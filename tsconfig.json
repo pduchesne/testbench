@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES2019",
+        "esModuleInterop": true,
+        "lib": ["ES2019", "dom", "dom.iterable"],
+
+        "declaration": true, // required to include definition files in output
+        "sourceMap": true,
+
+        "jsx": "react",
+        //"moduleResolution": "node",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "alwaysStrict": true,
+        "strictBindCallApply": true,
+        //"strictFunctionTypes": true,
+        //"strictPropertyInitialization": true,
+        //"suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true,
+        "preserveConstEnums": true,
+
+        "skipLibCheck": true,
+        //"typeRoots": [ "./types", "./node_modules/@types"]
+
+        "composite": true,
+        "incremental": true,
+
+        "outDir": "dist/lib",
+        "declarationDir": "dist/types",
+        "rootDir": "src"
+    }
+}

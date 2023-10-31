@@ -1,0 +1,72 @@
+$primary: #0b4461;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mainApp {
+  height: 100vh;
+  //width: 100%;
+  //position: absolute;
+}
+
+.contentPane {
+  padding: 10px;
+}
+
+.navbar {
+  padding: 5px;
+}
+
+.fill {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.hFlow {
+  display: flex;
+  flex-direction: row;
+
+  & > * {
+    flex: 1;
+    min-width: 0;
+    overflow: auto;
+  }
+}
+
+.vFlow {
+  display: flex;
+  flex-direction: column;
+
+  & > * {
+    //height: inherit;
+    flex: 1;
+    //overflow: auto;
+    min-height: 0;
+  }
+
+  .navbar {
+    flex: none;
+  }
+}
+
+.absolute-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 5px;
+  overflow: auto;
+}
+
+
+.CodeMirror {
+  border: 1px solid #eee;
+  height: auto !important;
+  width: auto;
+}
+
+
