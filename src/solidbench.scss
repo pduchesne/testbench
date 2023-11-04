@@ -37,7 +37,9 @@ body {
 }
 
 .vFlow {
-  display: flex;
+  &:not([hidden]) {
+    display: flex;
+  }
   flex-direction: column;
 
   & > * {
@@ -51,6 +53,7 @@ body {
     flex: none;
   }
 }
+
 
 .absolute-fill {
   position: absolute;

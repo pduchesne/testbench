@@ -8,13 +8,19 @@ import {PodBrowserPanel} from "./browser/pod-browser";
 import {createRoot} from "react-dom/client";
 import {AppNavBar} from "./navbar";
 import {AppContextProvider} from "./appContext";
+import {ColruytPanel} from "./tools/colruyt";
 
 
 const routes = [
     {
         component: PodBrowserPanel,
         path: '/tools/pod-viewer'
+    },
+    {
+        component: ColruytPanel,
+        path: '/tools/colruyt'
     }
+
 ];
 
 export const App = () => {
@@ -25,7 +31,7 @@ export const App = () => {
                     {ctx => (
                         <div className="mainApp vFlow">
                             <AppNavBar/>
-                            <div className='contentPane'>
+                            <div className='contentPane vFlow'>
                             <ErrorBoundary>
                                 <Routes>
                                     <Route
