@@ -9,6 +9,7 @@ import {createRoot} from "react-dom/client";
 import {AppNavBar} from "./navbar";
 import {AppContextProvider} from "./appContext";
 import {ColruytPanel} from "./tools/colruyt";
+import {SpotifyPanel} from "./tools/spotify";
 
 
 const routes = [
@@ -19,6 +20,10 @@ const routes = [
     {
         component: ColruytPanel,
         path: '/tools/colruyt'
+    },
+    {
+        component: SpotifyPanel,
+        path: '/tools/spotify'
     }
 
 ];

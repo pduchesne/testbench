@@ -54,7 +54,7 @@ module.exports = {
         fallback: {
             "url": false,
             //"stream": require.resolve("stream-browserify"),
-            //"crypto": require.resolve("crypto-browserify"),
+            "crypto": require.resolve("crypto-browserify"),
             //stream: require.resolve('readable-stream'),
         },
         alias: {
